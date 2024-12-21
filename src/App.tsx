@@ -1,4 +1,4 @@
-import './assets/Global.css'
+import './core-ui/Global.css'
 import { Navbar } from './components/layouts'
 
 function App() {

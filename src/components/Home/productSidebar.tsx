@@ -32,7 +32,7 @@ function productSidebar({}: props) {
 
   return (
     <div>
-      <div className="mb-10">
+      <div className="mb-8">
         <div className="flex justify-between items-center">
           <p className="text-2xl font-bold">หมวดหมู่สินค้า</p>
           <FontAwesomeIcon
@@ -47,15 +47,15 @@ function productSidebar({}: props) {
             Category.map((item, index) => (
               <div
                 key={index}
-                className="mt-8 text-md flex justify-start items-center gap-3 pl-5"
+                className="mt-8 text-base flex justify-start items-center gap-3 pl-5"
               >
-                <input value={item.id} type="checkbox" className="h-6 w-6" />
+                <input value={item.id} type="checkbox" className="h-5 w-5" />
                 <p>{item.name}</p>
               </div>
             ))}
         </form>
       </div>
-      <div className="mb-10">
+      <div className="mb-8">
         <div className="flex justify-between items-center">
           <p className="text-2xl font-bold">ราคาสินค้า</p>
           <FontAwesomeIcon

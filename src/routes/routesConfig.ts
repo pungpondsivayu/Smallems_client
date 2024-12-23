@@ -1,6 +1,6 @@
 import { Component, ComponentType } from "react";
 import path from "./path";
-import { Home, SignIn, SignUp } from "../pages";
+import { Home, SignIn } from "../pages";
 
 interface IroutesConfig {
   path: string;
@@ -16,15 +16,9 @@ const routeConfig: IroutesConfig[] = [
     allowedRoles: [],
   },
   {
-    // เข้าสู่ระบบ
+    // เข้าสู่ระบบ , สมัครสมาชิก
     path: path.SignIn,
     component: SignIn,
-    allowedRoles: [],
-  },
-  {
-    // สมัครสมาชิก
-    path: path.SignUp,
-    component: SignUp,
     allowedRoles: [],
   },
 ];

@@ -13,14 +13,14 @@ import {
 import { Link, NavLink } from "react-router";
 
 function Navbar() {
-  const menu = Menu.Admin;
+  const menu = Menu.User;
   const [Open, setOpen] = useState<Boolean>(false);
   return (
     <>
       {/* start Navbar */}
       <div className="mt-4 mb-8">
         <div className="w-full h-[70px] bg-[#508D4E] px-10 flex justify-between items-center rounded-full relative mb-3">
-          <div className="absolute w-full h-[70px] bg-[#1A5319]bg-[#1A5319] rounded-full -z-10 left-2 top-3"></div>
+          <div className="absolute w-full h-[70px] bg-[#1A5319] rounded-full -z-10 left-2 top-3"></div>
           <NavLink
             to={path.Index}
             className="font-serif text-xl sm:text-2xl font-bold text-white"
@@ -33,7 +33,7 @@ function Navbar() {
             </Link>
             <FontAwesomeIcon
               icon={!Open ? faBars : faXmark}
-              className="block sm:hidden text-2xl text-white cursor-pointer"
+              className="block sm:hidden tsext-2xl text-white cursor-pointer"
               onClick={() => setOpen(!Open)}
             />
           </div>
@@ -47,7 +47,7 @@ function Navbar() {
               <Link
                 key={item.id}
                 to={item.path}
-                className="text-base hover:border-b-4 hover:border-[#508D4E] cursor-pointer"
+                className="text-base md:text-lg hover:border-b-4 hover:border-[#508D4E] cursor-pointer"
               >
                 {item.name}
               </Link>
@@ -68,7 +68,7 @@ function Navbar() {
                   <Link
                     key={item.id}
                     to={item.name}
-                    className="text-base cursor-pointer w-full text-center h-14 flex justify-center items-center hover:bg-[#508D4E]"
+                    className="text-md cursor-pointer w-full text-center h-14 flex justify-center items-center hover:bg-[#508D4E]"
                   >
                     {item.name}
                   </Link>

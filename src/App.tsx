@@ -1,6 +1,6 @@
 import "./core-ui/Global.css";
 import { Navbar } from "./components/layouts";
-import { MainRoute } from "./routes/RoutesConfig";
+import { MainRoute } from "./routes/routesConfig";
 import { Route, Routes } from "react-router";
 
 function App() {
